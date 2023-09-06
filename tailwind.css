@@ -10,6 +10,38 @@ Document
 /**
 Use a better box model (opinionated).
 */
+a:link {
+
+  color : black;
+  font-weight: bold;
+  text-decoration:underline;
+  font-size: 15px;
+  
+}
+
+a:hover {
+  color : rgba(188, 5, 5, 0.8);
+  font-size: 20px;
+}
+
+.actions{
+  text-align: center;
+}
+.dom{
+  margin-left: 50px;
+}
+.conv{
+  font-size: 20px;
+  color: blueviolet;
+  font-weight: bold;
+  margin: 0 auto;
+}
+.savoir {
+  font-size: 10px;
+  font-style: italic;
+  font-weight: bold;
+  color: black;
+}
 .baniere {
   background-image: url(images/infirmiere-1.jpg);
   background-position: center;

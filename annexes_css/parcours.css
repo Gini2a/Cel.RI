@@ -3,3 +3,21 @@
     background-position: center;
     background-size: cover;
   }
+.desc{
+  background-color: aliceblue;
+}
+.descriptif {
+  background-color: aliceblue;
+  font-style: italic;
+  font-size: 20px;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: 0;
+  
+}
+
+.numero {
+  font-weight:bold;
+  font-size: 15px;
+}
+

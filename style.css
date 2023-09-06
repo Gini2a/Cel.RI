@@ -3,6 +3,11 @@
   background-position: center;
   background-size: cover;
 }
+.savoir {
+  font-size: 10px;
+  font-style: italic;
+  font-weight: bold;
+}
 .fa-instagram:hover {
   background: linear-gradient(to left, #59366a, #b27c92, #c97a58, #7c747c);
   -webkit-background-clip: text;
