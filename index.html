@@ -1,0 +1,188 @@
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Céline Herry infirmière libérale  à Savigny-sur-Orge soins infirmier à domicile">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" type="image/svg" sizes="32x32" href="images/icon-angel-grey.svg">
+    <script src="https://kit.fontawesome.com/ce2a36e089.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="tailwind.css">
+    <title>Sophie Cama IDEL</title>
+</head>
+
+<body>
+    <div>
+        <header class="bg-gray-800" x-data="{ isOpen: false }">
+            <nav class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
+                <div class="flex items-center justify-between">
+
+                    <!--  ! <i class="flex-none fas fa-user-nurse w-6 h-6 text-gray-500" viewBox="0 0 50 50" fill="none"></i>-->
+                    <a class=" text-xl font-bold text-white transition-colors duration-300 transform md:text-2xl
+                        hover:text-indigo-400" href="#">Céline Herry</a>
+
+                    <!-- Mobile menu button -->
+                    <div @click="isOpen = !isOpen" class="flex md:hidden">
+                        <button type="button"
+                            class="text-gray-200 hover:text-gray-400 focus:outline-none focus:text-gray-400"
+                            aria-label="toggle menu">
+                            <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                                <path fill-rule="evenodd"
+                                    d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+                <div :class="isOpen ? 'flex' : 'hidden'"
+                    class="flex-col mt-2 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
+                    <a class="text-sm font-medium text-gray-200 transition-colors duration-300 transform hover:text-indigo-400"
+                        href="#description">Votre Infirmière</a>
+                    <a class="text-sm font-medium text-gray-200 transition-colors duration-300 transform hover:text-indigo-400"
+                        href="#info">Infos</a>
+                    <a class="text-sm font-medium text-gray-200 transition-colors duration-300 transform hover:text-indigo-400"
+                        href="#contact">Contact</a>
+
+                </div>
+            </nav>
+
+            <section class="px-6 flex items-center justify-center baniere" style="height: 500px;">
+                <div class="text-center">
+                    <p class="text-xl font-medium tracking-wider text-black-600">Bienvenue sur le site de Céline Herry </p>
+                    <h2 class="mt-6 text-3xl font-bold text-black md:text-5xl">Infirmière Libérale
+                    </h2>
+
+                    <div class="flex justify-center mt-8">
+                        <a class="px-8 py-2 text-lg font-medium text-white transition-colors duration-300 transform bg-gray-800 rounded hover:bg-indigo-500"
+                            href="tel:+33626038524">06 23 02 38 32</a>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <article class="xl:flex max-w-7xl p-6  mx-auto mb-5 rounded shadow-lg m-4">
+            <section
+                class="xl:mr-2 max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl p-4 m-4 xl:w-1/2">
+                <div class="md:flex ">
+                    <div class="md:flex-shrink-0">
+                        <img class="bg-auto h-48 w-full object-cover md:w-48 rounded-md"
+                            src="images/cabinet-infirmiere.jpg" alt="photo de soins ">
+                    </div>
+                    <div class="p-2 lg:p-4">
+                        <div class="uppercase tracking-wide text-sm text-gray-800 font-semibold">Soins Infirmier à
+                            Savigny-sur-orge</div>
+
+                        <p class="mt-2 text-gray-500">Les soins infirmiers sont réalisés uniquement sur
+                            prescription médicale et le cabinet est conventionné par la Sécurité sociale.
+                            Les soins délivrés par votre infirmière sont tous ceux que son diplôme lui permet.</p>
+                    </div>
+                </div>
+            </section>
+            <section
+                class="xl:ml-2 max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl p-4 m-4 xl:w-1/2"
+                id="description">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0 ">
+                        <img class="h-48 w-full object-cover md:w-48 rounded-md" src="images/Herry_Celine.jpg"
+                            alt="photo de Céline Herry">
+                    </div>
+                    <div class="p-2 lg:p-4">
+                        <a href="#contact"
+                            class="uppercase tracking-wide text-sm text-gray-800 font-semibold">Infirmière
+                            Libérale</a>
+                        <p class="mt-2 text-gray-500">Infirmière libérale diplômée, je suis à votre disposition
+                            vous prodiguer les différents soins infirmiers sur prescription médicale à votre domicile ou
+                            au cabinet sur rendez-vous.<br><br>
+                            <a href="pages/parcours.html">En savoir plus...</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <article class="bg-white">
+            <div class="max-w-7xl p-6  mx-auto mb-5 rounded shadow-lg">
+                <div class="grid gap-8 mt-10 md:grid-cols-2 lg:grid-cols-4" id="">
+                    <div class="px-6 py-8 overflow-hidden bg-white rounded-md shadow-md">
+                        <h2 class="text-xl font-medium text-gray-800">Contact</h2>
+                        <p class="max-w-md mt-4 text-gray-400"> 5 bis avenue des Marronniers<br>
+                            91600 Savigny-sur-Orge<br>
+                            06 18 47 37 93<br>
+                            cel.riben@yahoo.fr
+                     
+
+                        </p>
+                    </div>
+                    <div class="px-6 py-8 overflow-hidden bg-white rounded-md shadow-md" id="activites">
+                        <h2 class="text-xl font-medium text-gray-800">Les services</h2>
+                        <p class="max-w-md mt-4 text-gray-400">
+                        <p class="max-w-lg mt-4 text-gray-400">
+                            - Infirmière diplomée d'Etat<br>
+                            - Soins à domicile<br>
+                            - Accès pour les personnes à mobilité réduite<br>
+                            - Conventionnement sécurité sociale<br>
+                            - Pas de dépassement d'honoraires
+                            - Tiers payant avec les mutuelles
+                            ...
+                        </p>
+
+                        </p>
+                    </div>
+
+                    <div class="px-6 py-8 overflow-hidden bg-white rounded-md shadow-md" id="info">
+                        <h2 class="text-xl font-medium text-gray-800">Informations complémentaires</h2>
+                        <p class="max-w-md mt-4 text-gray-400">numéro ADELI : </p>
+                        <a class="max-w-md mt-4 text-gray-600 hover:text-gray-800 hover:underline hover:text-dark"
+                            href="https://www.ordre-infirmiers.fr/assets/files/000/ONI_Charte%20Internet_HD.pdf"
+                            target="_blank">Charte relative à la création de site internet </a>
+                    </div>
+
+                    <div class="px-6 py-8 overflow-hidden bg-white rounded-md shadow-md">
+                        <h2 class="text-xl font-medium text-gray-800">Localisation</h2>
+                        <iframe class="max-w-md mt-4 w-full "
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2633.9366507005057!2d2.3487875513342615!3d48.68757582057075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5d9ec643ae2a3%3A0xa578f488cbd21b9e!2sHerry%20C%C3%A9line%20-%20Infirmi%C3%A8re%20lib%C3%A9rale%20(cabinet%2C%20soins%20%C3%A0%20domicile)!5e0!3m2!1sfr!2sfr!4v1575294469880!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </article>
+        <section>
+            <div class="flex justify-center" id="contact">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSf16rilXN46lTMkkJ63BEENihdNzDGqEhEhBXdwLW2qkM4sxg/viewform?embedded=true"
+                    width="640" height="1024" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+            </div>
+        </section>
+
+        <footer class="border-t">
+
+            <div class="container flex items-center justify-between px-6 py-8 mx-auto">
+
+                <div class="mt-2 flex items-center justify-between px-6 py-8 mx-auto"><span id="s_annee"></span> . © Infirmière libérale .<br>
+                  
+                </div>
+                
+
+
+            </div>
+
+        </footer>
+        <!-- <div><a id="cRetour" class="cInvisible" href="#"></a></div>-->
+        <!--Bouton scroll-->
+        <div id="back2Top" class=" float-right cursor-pointer p-2 fixed right-2 bottom-9">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"
+                class="fill-current text-gray-500 dark:text-gray-50">
+                <path troke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm17-1h-4v8h-2v-8h-4l5-6 5 6z" />
+            </svg>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
