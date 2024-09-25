@@ -1,0 +1,91 @@
+body{
+    background-color: aliceblue;
+}
+main{
+    width: 80%;
+    margin: auto;
+
+}
+
+.diapo{
+    position: relative;
+    overflow: hidden;
+}
+
+.elements{
+    display: flex;
+}
+
+.element{
+    flex: 1 0 100%;
+    position: relative;
+}
+
+.element > img{
+    width: 100%;
+    height: 500px;
+}
+
+.caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+}
+
+#nav-gauche, #nav-droite{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#nav-droite{
+    right: 0;
+}
+
+.presentation{
+    margin-top: 50px;
+    display: flex;
+}
+
+.cabinet{
+    margin-right: 50px;
+}
+
+.hours{
+    margin-top: 40px;
+}
+
+.open{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.week{
+    font-size: 1.3em;
+    font-style:italic ;
+    font-weight: bold;
+}
+
+.listing{
+    font-style: italic;
+}
+
+ul{
+    
+    font-weight: bold ;
+}
+
+.diapo{
+   
+    max-width: 800px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+}

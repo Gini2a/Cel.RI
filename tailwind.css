@@ -10,9 +10,26 @@ Document
 /**
 Use a better box model (opinionated).
 */
+
+body{
+  background-color: aliceblue
+}
+
+.diapo-cadre {
+  display: inline-block;
+  position: relative;     /* pour servir de référent */
+}
+.diapo-cadre img {
+  display: block;         /* supprime l'espace sous les images */
+}
+.diapo-cadre > * + * {    /* tous les enfants directs sauf le 1st */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 a:link {
 
-  color : black;
+
   font-weight: bold;
   text-decoration:underline;
   font-size: 15px;
@@ -85363,7 +85380,7 @@ video {
   }
 
   .md\:text-2xl {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 2rem;
   }
 

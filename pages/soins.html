@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/annexes_css/parcours.css">
+    <title>Notre Cabinet et nos soins</title>
+
+    <!-- Fichiers CSS -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="/annexes_css/soins.css">
     <link rel="stylesheet" href="/tailwind.css">
-    <title>Mon Parcours</title>
+
+    <!-- Fichiers JS -->
+    <script src="/script/soins.js" defer></script>
+
 </head>
 <body>
     <header class="bg-gray-800" x-data="{ isOpen: false }">
@@ -14,7 +21,7 @@
 
                 <!--  ! <i class="flex-none fas fa-user-nurse w-6 h-6 text-gray-500" viewBox="0 0 50 50" fill="none"></i>-->
                 <a class=" text-xl font-bold text-white transition-colors duration-300 transform md:text-2xl
-                    hover:text-indigo-400" href="#">Céline Herry</a>
+                    hover:text-indigo-400" >Céline Herry</a>
 
                 <!-- Mobile menu button -->
                 <div @click="isOpen = !isOpen" class="flex md:hidden">
@@ -46,44 +53,63 @@
                 </h2>
 
                 <div class="flex justify-center mt-8">
-                    <a class="px-8 py-2 text-lg font-medium text-white transition-colors duration-300 transform bg-gray-800 rounded hover:bg-indigo-500"
-                        href="tel:+33626038524">06 23 02 38 32</a>
+                    <p class="px-8 py-2 text-lg font-medium text-white transition-colors duration-300 transform bg-gray-800 rounded hover:bg-indigo-500"
+                        >06 18 47 37 93</p>
+
+                </div>
+                <div class="hours">
+                    <p class="text-xl font-medium tracking-wider text-black-600">
+                        <h1 class="open">Horaires d'accueil téléphonique</h1> <br>
+
+                        <h2 class="week">Du lundi au dimanche 7h30-20h</h2>
+
+                
+                        
+                    </p>
+
                 </div>
             </div>
         </section>
         </header>
-        <section class="cabinet">
-        <article class="dom"><br><br>
-            <p class= actions>
-             Soins à domicile ou au cabinet infirmier<br>
-            Pour tous soins à domicile et au cabinet infirmier, Céline Herry, infirmière à domicile à Savigny-sur-Orge vous soignera sur rendez-vous.<br>   
-            Nous pouvons effectuer tous types de soins :<br>
-            – la pose et le changement de pansements avec ou sans mèches<br>
-            – tous types de pansements suite à césarienne, abcès, ulcère, escarre, kystes, etc..<br>
-            – la prise en charge du diabète et des diabétiques (insulines)<br>
-            – retrait de fils ou d’agrafes<br>
-            – prise de médicaments<br>
-            
-            Tous ces soins doivent être réalisés uniquement sur prescription médicale.<br>
-            
-            Disponible 7j/7, les week-ends, dimanches et jours fériés inclus.<br>
-            
-            Prise de rendez-vous par téléphone au 06 18 47 37 93.<br>
-            
-            Horaires d’accueil téléphonique, si nécessaire laisser un message et je vous rappelle dans les meilleurs délais :<br></p>>
-            Lundi – 07:00 à 20:00<br>
-            Mardi – 07:00 à 20:00<br>
-            Mercredi – 07:00 à 20:00<br>
-            Jeudi – 07:00 à 20:00<br>
-            Vendredi – 07:00 à 20:00<br>
-            Samedi – 07:00 à 20:00<br>
-            Dimanche – 07:00 à 20:00<br>
-            
-            Vous trouverez les coordonnées et l’accès au cabinet en cliquant ici.<br>
-        </article>
+    <main>
+       
+        <section class="presentation"><br>
+            <div class="cabinet">
+
+            <h1 class="listing">Pour tous soins à domicile et au cabinet infirmier, Céline Herry, infirmière à domicile à Savigny-sur-Orge vous soignera sur rendez-vous.
+            Nous pouvons effectuer tous types de soins :</h1><br>
+            <ul>
+            <li>- La pose et le changement de pansements avec ou sans mèches</li>
+            <li>- Tous types de pansements suite à césarienne, abcès, ulcère, escarre, kystes, etc..</li>
+            <li>- La prise en charge du diabète et des diabétiques (insulines)</li>
+            <li>- Retrait de fils ou d’agrafes</li>
+            <li>- Prise de médicaments</li>
+            <li>- Etc…</li>
+            </ul>
+            <br>
+
+            <h1 class="listing">Tous ces soins doivent être réalisés uniquement sur prescription médicale.</h1><br>
+            </div>
         </section>
-    
-  
-    
+        <div class="diapo" data-speed="10000" data-transition="">
+            <div class="elements">
+                <div class="element">
+                    <img src="/images/IMG-20240910-WA0001.jpg" alt="">
+                </div>
+                <div class="element">
+                    <img src="/images/IMG-20240910-WA0002.jpg" alt="">
+                </div>
+                <div class="element">
+                    <img src="/images/IMG-20240910-WA0003.jpg" alt="">
+                </div>
+                <div class="element">
+                    <img src="/images/IMG-20240910-WA0004.jpg" alt="">
+                </div>
+            </div>
+            <!-- Flèches -->
+            <i id="nav-gauche" class="las la-chevron-left"></i>
+            <i id="nav-droite" class="las la-chevron-right"></i>
+        </div>
+    </main>
 </body>
 </html>
